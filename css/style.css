@@ -1,0 +1,161 @@
+body {
+  font-family: Geneva, Verdana, sans-serif ;
+    background: rgb(30, 199, 143);
+  background: linear-gradient(
+    rgb(118, 231, 197) 0%,
+    rgba(8, 126, 67, 0.712) 100%
+  );
+}
+.container {
+    display: flex;
+    justify-content:space-around;
+}
+.box {
+  background-color: rgba(0, 136, 102, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  color: #fff;
+  width: 400px;
+}
+
+.boxprodutos {
+    height: 200px;
+}
+img {
+ height: 25vw;
+ margin-top: 8%;
+}
+
+fieldset {
+  border: 2px solid #33e2b6;
+}
+
+legend {
+  border: 1px solid #33e2b6;
+  padding: 10px;
+  text-align: center;
+  background-color: #33e2b6;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+
+footer {
+  bottom: 0;
+  left: 0;
+  height: 54px;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(18, 202, 147);
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.boxprodutos {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3px;
+  }
+
+.campoTexto {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  width: 100%;
+}
+
+.labelTexto {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5px;
+}
+
+.campoTexto:focus ~ .labelTexto {
+  top: -20px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.campoTexto:valid ~ .labelTexto {
+  top: -20px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.botao {
+  background: rgb(30, 199, 199);
+  background: radial-gradient(
+    circle,
+    rgb(51, 221, 170) 0%,
+    rgb(20, 204, 158) 32%,
+    rgba(27, 193, 143, 0.712) 100%
+  );
+  width: 49%;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.botao:hover {
+  background: rgb(20, 142, 142);
+  background: radial-gradient(
+    circle,
+    rgb(20, 142, 116) 0%,
+    rgb(16, 158, 139) 32%,
+    rgba(18, 139, 129, 0.712) 100%
+  );
+}
+
+@media (max-width: 1300px) {
+  .box {
+    width: 80%;
+    height: auto;
+  }
+
+  .botao {
+    width: 100%;
+    margin: 10px 0 0 0px;
+  }
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box{
+        margin-top: 25px;
+    }
+}

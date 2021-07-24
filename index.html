@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Gestão de Cadastros</title>
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+        <form class="form" id="form">
+            <fieldset>
+                <legend>Cadastro de Clientes</legend>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="nome" nome="nome" class="campoTexto"/> 
+                    <label for="nome" class="labelTexto">Nome:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="email" class="campoTexto"/>
+                    <label for="nome" class="labelTexto">E-mail:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="cep" nome="cep" class="campoTexto" maxlength="9"/>
+                    <label for="nome" class="labelTexto">CEP:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="rua" nome="rua" class="campoTexto"/>
+                    <label for="nome" class="labelTexto">Rua:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="number" id="numero" nome="numero" class="campoTexto"/>
+                    <label for="nome" class="labelTexto">Número:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="complemento" nome="complemento" class="campoTexto"/>
+                    <label for="nome" class="labelTexto">Complemento (opcional):</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="bairro" nome="bairro" class="campoTexto"/>
+                    <label for="nome" class="labelTexto">Bairro:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="cidade" nome="cidade" class="campoTexto"/>
+                    <label for="nome" class="labelTexto">Cidade:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="estado" nome="estado" class="campoTexto" maxlength="2"/>
+                    <label for="estado" class="labelTexto">Estado:</label>
+                </div>
+                <br>
+            </fieldset>
+                <input type="submit" id="add" class="botao" value="Cadastrar" onclick="validarClientes()"/>
+                <input type="submit" id="add" class="botao" value="Ver cadastros" onclick="listarClientes()"/>
+        </form>
+    </div>
+<img src="./images/cadastro.png" alt="" class="cadastro">
+    <div class="box" class="boxprodutos">
+        <form class="form" id="form">
+            <fieldset>
+                <legend>Cadastro de Produtos</legend>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="nomeProduto" nome="produto" class="campoTexto"/> 
+                    <label for="nome" class="labelTexto">Nome do Produto:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="codigo" nome="cpdogp" class="campoTexto"/>
+                    <label for="codigo" class="labelTexto">Código:</label>
+                </div>
+                <br>
+                
+                <div class="input-box">
+                    <input type="text" id= "descricao" nome="descricao" class="campoTexto"/>
+                    <label for="descricao" class="labelTexto">Descrição:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id= "valor" nome="valor" class="campoTexto"/>
+                    <label for="valor" class="labelTexto">Preço:</label>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="text" id="quantidade" nome="quantidade" class="campoTexto"/>
+                    <label for="quantidade" class="labelTexto">Quantidade:</label>
+                </div>
+                <br>
+            </fieldset>
+                    <input type="submit" id="add" class="botao" value="Cadastrar" onclick="validarProdutos('nomeProduto', 'codigo', 'valor', 'quantidade')"/>
+                    <input type="submit" id="verEstoque" class="botao" value="Ver estoque" onclick="listarProdutos()"/>
+        </form>
+    </div> </div>
+    <footer>
+        <p>Luisa Garrozi de Oliveira</a></p>
+    </footer>
+</body>
+    <script src="../js/script.js"></script>
+</html>
