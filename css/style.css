@@ -6,9 +6,18 @@ body {
     rgba(8, 126, 67, 0.712) 100%
   );
 }
+
+.header {
+  margin: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
 .container {
     display: flex;
     justify-content:space-around;
+    margin-bottom: 6%;
 }
 .box {
   background-color: rgba(0, 136, 102, 0.6);
@@ -137,8 +146,18 @@ a:hover {
     rgba(18, 139, 129, 0.712) 100%
   );
 }
+.estoque {
+background: linear-gradient(
+  rgb(118, 231, 197) 0%,
+  rgba(8, 126, 67, 0.712) 100%
+  );
+}
 
 @media (max-width: 1300px) {
+  .container {
+    margin-bottom: 12%;
+    
+}
   .box {
     width: 80%;
     height: auto;
@@ -150,11 +169,17 @@ a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .container {
         flex-direction: column;
+        margin-left: 8%;
+        margin-bottom: 12%;
     }
-
+.cadastro {
+width: 50%;
+height: auto;
+margin-left: 20%;
+}
     .box{
         margin-top: 25px;
     }

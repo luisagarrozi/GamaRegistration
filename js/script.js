@@ -137,3 +137,4 @@ function cadastrarProdutos(){
         localStorage.setItem("produtos",JSON.stringify(produtos))
         alert("Produto foi cadastrado.")
 }};
+
